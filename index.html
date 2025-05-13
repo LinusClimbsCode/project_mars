@@ -110,22 +110,24 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <div id="brand_sozial_media_footer_">
-            <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo">
-            <div id="sozial_media_links">
-                <a href="#"><img src="/pictures/facebook-svgrepo-com.svg" alt="Facebook"></a>
-                <a href="#"><img src="/pictures/instagram-svgrepo-com.svg" alt="Instagram"></a>
-                <a href="#"><img src="/pictures/youtube-svgrepo-com.svg" alt="Youtube"></a>
-                <a href="#"><img src="/pictures/linkedin-linked-in-svgrepo-com.svg" alt="LinkedIn"></a>
+    <footer class="flex flex-col gap-1 items-center p-2">
+        <div id="brand_social_media_footer" class="flex flex-row justify-between w-full p-2">
+            <a href="#"><img src="/pictures/planet_logo.png" alt="Company Logo" class="max-h-6"></a>
+            <div id="social_media_links" class="flex flex-row gap-2">
+                <a href="#"><img src="/pictures/facebook-svgrepo-com.svg" alt="Facebook" class="max-h-6"></a>
+                <a href="#"><img src="/pictures/instagram-svgrepo-com.svg" alt="Instagram" class="max-h-6"></a>
+                <a href="#"><img src="/pictures/youtube-svgrepo-com.svg" alt="YouTube" class="max-h-6"></a>
+                <a href="#"><img src="/pictures/linkedin-linked-in-svgrepo-com.svg" alt="LinkedIn" class="max-h-6"></a>
             </div>
         </div>
-        <p>© 2025 UAC. All rights reserved.</p>
-        <nav id="navigation_links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Contact Us</a>
-        </nav>
+        <div class="flex flex-col text-xs gap-0 items-center">
+            <p>© 2025 UAC. All rights reserved.</p>
+            <nav id="navigation_links" class="flex gap-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#contact" class="hover:underline">Contact Us</a>
+            </nav>
+        </div>
     </footer>
 </body>
 <script>
