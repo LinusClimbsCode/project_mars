@@ -9,42 +9,53 @@
     <style type="text/tailwindcss">
 
     </style>
+
 </head>
 
-<body>
+<body class="flex flex-col">
     <!-- Header -->
-    <header>
-        <nav>
-            <div id="company_brand">
-                <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo">
-                <h1>Union Aerospace Corporation</h1>
+    <header class="flex flex-row items-center p-2">
+        <nav class="flex px-3 py-2 bg-red-300 rounded-full justify-between w-full">
+            <div id="company_brand" class="flex items-center">
+                <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo" class="max-h-8">
+                <h1 class="text-xs md:text-base lg:text-xl ml-2">Union Aerospace Corporation</h1>
             </div>
-            <div id="burger_menu">
+            <div id="burger_menu" class="flex">
+                <!--
                 <input type="checkbox" id="menu-toggle">
+                -->
                 <label for="menu-toggle">
-                    <img src="pictures/burger-menu-svgrepo-com.svg" alt="burger_menu">
+                    <img src="pictures/burger-menu-svgrepo-com.svg" alt="burger_menu" class="max-h-8">
                 </label>
-
-                <ul class="menu">
+                <!--
+                <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#transportation_method">Transportation method</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                -->
             </div>
         </nav>
     </header>
     <main>
         <!-- Hero Section -->
+        <!--
         <section id="hero">
             <h2>THE UNKNOWN</h2>
             <p>Flying to new destinations</p>
         </section>
+    -->
         <!-- About Us Section -->
+        <!--
         <section id="about"></section>
+        -->
         <!-- Transportation Methods Section -->
+        <!--
         <section id="transportation_method"></section>
+                -->
         <!-- Contact Section -->
+        <!--
         <section id="contact">
             <div id="contact_header">
                 <h3>Contact us</h3>
@@ -68,7 +79,9 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
+-->
+        <!-- Footer -->
+        <!--
     <footer>
         <div id="brand_sozial_media_footer_">
             <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo">
@@ -87,6 +100,19 @@
         </nav>
     </footer>
 </body>
-
+-->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            "marsorange": "#FFA647",
+                            "marsblack": "#260601",
+                            "marswhite": "#FAF3F0",
+                        },
+                    },
+                },
+            };
+        </script>
 
 </html>
