@@ -13,21 +13,22 @@
 </head>
 
 <body class="flex flex-col">
-    <!-- Header -->
-    <header class="flex flex-row items-center p-2">
-        <nav class="flex px-3 py-2 bg-red-300 rounded-full justify-between w-full">
-            <div id="company_brand" class="flex items-center">
-                <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo" class="max-h-8">
-                <h1 class="text-xs md:text-base lg:text-xl ml-2">Union Aerospace Corporation</h1>
-            </div>
-            <div id="burger_menu" class="flex">
-                <!--
+    <div id="background_image" class="bg-[url(/pictures/mars.jpeg)] bg-center bg-top">
+        <!-- Header -->
+        <header class="flex flex-row items-center p-2">
+            <nav class="flex px-3 py-2 bg-red-300 rounded-full justify-between w-full">
+                <div id="company_brand" class="flex items-center">
+                    <img src="/pictures/planet_logo.png" alt="Union Aerospace Corporation Logo" class="max-h-8">
+                    <h1 class="text-xs md:text-base lg:text-xl ml-2">Union Aerospace Corporation</h1>
+                </div>
+                <div id="burger_menu" class="flex">
+                    <!--
                 <input type="checkbox" id="menu-toggle">
                 -->
-                <label for="menu-toggle">
-                    <img src="pictures/burger-menu-svgrepo-com.svg" alt="burger_menu" class="max-h-8">
-                </label>
-                <!--
+                    <label for="menu-toggle">
+                        <img src="pictures/burger-menu-svgrepo-com.svg" alt="burger_menu" class="max-h-8">
+                    </label>
+                    <!--
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,100 +36,104 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 -->
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="flex flex-col items-center">
-            <h2 class="font-extrabold text-xl md:text-2xl lg:text-4xl ml-2 pt-20">THE UNKNOWN</h2>
-            <p class="text-xs md:text-base lg:text-xl ml-2 pb-160 ">Flying to new destinations</p>
-        </section>
-        <!-- About Us Section -->
-        <section id="about" class="flex flex-col gap-3 items-center p-2">
-            <div class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
-                <h3 class="font-extrabold">About Us</h3>
-            </div>
-            <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
-                <p class="p-2">
-                    Welcome to Union Aerospace Corporation, your gateway to the stars and beyond! As the premier travel
-                    agency specializing in voyages to Mars, we redefine the limits of exploration and adventure.
-                    At UAC, we believe that space travel should be more than just science fiction—it should be a
-                    seamless, luxurious, and awe-inspiring experience.From breathtaking views of the red planet to
-                    immersive interplanetary excursions, our state-of-the-art fleet ensures every journey is safe,
-                    comfortable, and unforgettable.
-                    Whether you're a pioneer seeking a new frontier, a thrill-seeker chasing the ultimate cosmic
-                    adventure, or a dreamer longing to set foot on Martian soil—we make the impossible, possible.
-                    Join us as we take humanity further than ever before. Mars is waiting. Are you ready to go?
-                </p>
-            </div>
-        </section>
-        <!-- Transportation Methods Section -->
-        <section id="transportation_method" class="flex flex-col gap-3 items-center p-2">
-            <div class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
-                <h3 class="font-extrabold">
-                    Transportation Methods
-                </h3>
-            </div>
-            <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
-                <img src="./pictures/teleportation.jpg" class="rounded-full p-2 max-h-96">
-                <p class="p-2">
-                    With our latest quantic technology, embrace a new form of journey, without relying on fossile fuel
-                    anymore
-                </p>
-            </div>
-            <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
-                <img src="./pictures/space_rocket.jpg" class="rounded-full p-2 max-h-96">
-                <p class="p-2">
-                    Join our crew and start your adventure in another planet by rocket
-                </p>
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact" class="flex flex-col gap-3 items-center p-2">
-            <div id="contact_header" class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
-                <h3 class="font-extrabold">Contact us</h3>
-            </div>
-            <div id="contact_form" class="flex flex-col py-2 bg-red-300 rounded-3xl w-full p-2">
-                <form class="flex flex-col">
-                    <label for="first-name">Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name" class="border-solid"
-                        required>
-
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Ask a question or..." required></textarea>
-
-                    <button type="submit" class="border-solid">Submit</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer class="flex flex-col gap-1 items-center p-2">
-        <div id="brand_social_media_footer" class="flex flex-row justify-between w-full p-2">
-            <a href="#"><img src="/pictures/planet_logo.png" alt="Company Logo" class="max-h-6"></a>
-            <div id="social_media_links" class="flex flex-row gap-2">
-                <a href="#"><img src="/pictures/facebook-svgrepo-com.svg" alt="Facebook" class="max-h-6"></a>
-                <a href="#"><img src="/pictures/instagram-svgrepo-com.svg" alt="Instagram" class="max-h-6"></a>
-                <a href="#"><img src="/pictures/youtube-svgrepo-com.svg" alt="YouTube" class="max-h-6"></a>
-                <a href="#"><img src="/pictures/linkedin-linked-in-svgrepo-com.svg" alt="LinkedIn" class="max-h-6"></a>
-            </div>
-        </div>
-        <div class="flex flex-col text-xs gap-0 items-center">
-            <p>© 2025 UAC. All rights reserved.</p>
-            <nav id="navigation_links" class="flex gap-2">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-                <a href="#" class="hover:underline">Terms of Service</a>
-                <a href="#contact" class="hover:underline">Contact Us</a>
+                </div>
             </nav>
-        </div>
-    </footer>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="flex flex-col items-center">
+                <h2 class="font-extrabold text-xl md:text-2xl lg:text-4xl ml-2 pt-20">THE UNKNOWN</h2>
+                <p class="text-xs md:text-base lg:text-xl ml-2 pb-160 ">Flying to new destinations</p>
+            </section>
+            <!-- About Us Section -->
+            <section id="about" class="flex flex-col gap-3 items-center p-2">
+                <div class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
+                    <h3 class="font-extrabold">About Us</h3>
+                </div>
+                <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
+                    <p class="p-2">
+                        Welcome to Union Aerospace Corporation, your gateway to the stars and beyond! As the premier
+                        travel
+                        agency specializing in voyages to Mars, we redefine the limits of exploration and adventure.
+                        At UAC, we believe that space travel should be more than just science fiction—it should be a
+                        seamless, luxurious, and awe-inspiring experience.From breathtaking views of the red planet to
+                        immersive interplanetary excursions, our state-of-the-art fleet ensures every journey is safe,
+                        comfortable, and unforgettable.
+                        Whether you're a pioneer seeking a new frontier, a thrill-seeker chasing the ultimate cosmic
+                        adventure, or a dreamer longing to set foot on Martian soil—we make the impossible, possible.
+                        Join us as we take humanity further than ever before. Mars is waiting. Are you ready to go?
+                    </p>
+                </div>
+            </section>
+            <!-- Transportation Methods Section -->
+            <section id="transportation_method" class="flex flex-col gap-3 items-center p-2">
+                <div class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
+                    <h3 class="font-extrabold">
+                        Transportation Methods
+                    </h3>
+                </div>
+                <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
+                    <img src="./pictures/teleportation.jpg" class="rounded-full p-2 max-h-96">
+                    <p class="p-2">
+                        With our latest quantic technology, embrace a new form of journey, without relying on fossile
+                        fuel
+                        anymore
+                    </p>
+                </div>
+                <div class="flex flex-col py-2 bg-red-300 rounded-3xl w-full items-center">
+                    <img src="./pictures/space_rocket.jpg" class="rounded-full p-2 max-h-96">
+                    <p class="p-2">
+                        Join our crew and start your adventure in another planet by rocket
+                    </p>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="flex flex-col gap-3 items-center p-2">
+                <div id="contact_header" class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
+                    <h3 class="font-extrabold">Contact us</h3>
+                </div>
+                <div id="contact_form" class="flex flex-col py-2 bg-red-300 rounded-3xl w-full p-2">
+                    <form class="flex flex-col">
+                        <label for="first-name">Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name"
+                            class="border-solid" required>
+
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Ask a question or..." required></textarea>
+
+                        <button type="submit" class="border-solid">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="flex flex-col gap-1 items-center p-2">
+            <div id="brand_social_media_footer" class="flex flex-row justify-between w-full p-2">
+                <a href="#"><img src="/pictures/planet_logo.png" alt="Company Logo" class="max-h-6"></a>
+                <div id="social_media_links" class="flex flex-row gap-2">
+                    <a href="#"><img src="/pictures/facebook-svgrepo-com.svg" alt="Facebook" class="max-h-6"></a>
+                    <a href="#"><img src="/pictures/instagram-svgrepo-com.svg" alt="Instagram" class="max-h-6"></a>
+                    <a href="#"><img src="/pictures/youtube-svgrepo-com.svg" alt="YouTube" class="max-h-6"></a>
+                    <a href="#"><img src="/pictures/linkedin-linked-in-svgrepo-com.svg" alt="LinkedIn"
+                            class="max-h-6"></a>
+                </div>
+            </div>
+            <div class="flex flex-col text-xs gap-0 items-center">
+                <p>© 2025 UAC. All rights reserved.</p>
+                <nav id="navigation_links" class="flex gap-2">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                    <a href="#contact" class="hover:underline">Contact Us</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
 <script>
     tailwind.config = {
