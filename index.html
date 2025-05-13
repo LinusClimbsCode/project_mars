@@ -85,14 +85,15 @@
             </div>
         </section>
         <!-- Contact Section -->
-        <section id="contact">
-            <div id="contact_header">
-                <h3>Contact us</h3>
+        <section id="contact" class="flex flex-col gap-3 items-center p-2">
+            <div id="contact_header" class="flex flex-col px-3 py-2 bg-red-300 rounded-full w-full items-center">
+                <h3 class="font-extrabold">Contact us</h3>
             </div>
-            <div id="contact_form">
-                <form>
+            <div id="contact_form" class="flex flex-col py-2 bg-red-300 rounded-3xl w-full p-2">
+                <form class="flex flex-col">
                     <label for="first-name">Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" class="border-solid"
+                        required>
 
                     <label for="last-name">Last Name</label>
                     <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
@@ -103,7 +104,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Ask a question or..." required></textarea>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="border-solid">Submit</button>
                 </form>
             </div>
         </section>
